@@ -34,13 +34,18 @@
         align-items: center;
         margin: .75em 0;
         background-color:lightgrey;
-        padding-left: 7em;
-        padding-right: 7em;
+        /*padding: .75em 7em;*/
     }
     .nav {
         display: flex;
         align-items: center;
     }
+    ul{
+        padding: 0;
+    }
+    /*.alert-info a {*/
+    /*    text-decoration: none;*/
+    /*}*/
 }
 
 /*git pull is easy!*/
