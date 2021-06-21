@@ -34,7 +34,7 @@
         align-items: center;
         margin: .75em 0;
         background-color:lightgrey;
-        /*padding: .75em 7em;*/
+        padding: .75em 7em;
     }
     .nav {
         display: flex;
@@ -43,9 +43,9 @@
     ul{
         padding: 0;
     }
-    /*.alert-info a {*/
-    /*    text-decoration: none;*/
-    /*}*/
+    .alert-info a {
+        text-decoration: none;
+    }
 }
 
 /*git pull is easy!*/
