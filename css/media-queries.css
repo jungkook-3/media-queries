@@ -1,46 +1,59 @@
-.heading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.nav-links {
-    display: flex;
-    flex-direction: column;
-    /*width: 80%;*/
-}
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.alert-info {
+    display: flex;
+     background-color: lightblue;
+     width: 100%;
+    justify-content: center;
+     border: solid lightgray;
+ }
+.alert-info a {
+    text-decoration: none;
+}
+
 .header-img {
     display: flex;
     flex-direction: column;
     height:80%;
     width:90%;
 }
-li {
-    list-style-type: none;
+.nav-links {
+    list-style: none;
+     display: flex;
+     flex-direction: column;
+     padding: 0;
+     margin: 0;
+ }
+.nav-links li {
     display: flex;
-    flex-grow: 1;
-    border-width: 10em;
+    justify-content: center;
+    margin-bottom: 1em;
+    width: 100%;
     align-items: center;
-    margin: .75em 0;
-    background-color:lightgrey;
-    padding: .75em 7em;
+    height: 4em;
+    /*margin: .75em 0;*/
+    background-color: lightgrey;
 }
-.nav {
-    display: flex;
-    align-items: center;
+.nav-links a {
+    margin: auto;
 }
-ul{
-    padding: 0;
-}
-.alert-info a {
-    text-decoration: none;
-}
+/*    padding: .75em 7em;*/
+/*}*/
+/*.nav {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
 
 @media screen and (min-width:700px) {
+    body {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
     .alert-info {
         display: none;
     }
@@ -48,14 +61,31 @@ ul{
         display: flex;
         flex-direction: row;
     }
+    .header h1 {
+
+        margin-right: 100%;
+    }
+    .header ul {
+        justify-self: end;
+    }
     .nav-links {
         display: flex;
         flex-direction: row;
+        margin: 0;
     }
     li {
         padding: 0;
-        margin: 1em;
+        margin: 0;
         background: none;
+    }
+    .main {
+        flex-basis: 50%;
+    }
+    .sub-section {
+        flex-basis: 50%;
+    }
+    section p {
+        padding-right: 2em;
     }
 }
 /*git pull is easy!*/
